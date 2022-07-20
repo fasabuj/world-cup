@@ -54,11 +54,11 @@ section{
     background-color: orangered;
     font-size: 16px;
 }
-#watch-now:hover{
-    animation: forwards;
+/* #watch-now:hover{
+    animation: forwards; */
 }
-#banner-photo{
-    width: 581px;
+#banner-photo > img{
+    width: 650px;
     height: 613px;
 }
 

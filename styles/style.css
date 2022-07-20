@@ -6,18 +6,20 @@
 /* Main body styles */
 body{
     font-family: 'Poppins', sans-serif;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
 }
 
-section{
+/* section{
     display: flex;
     flex-direction:row;
     align-items: center;
-}
+} */
 
 /* banner section's style */
 .banner{
@@ -25,15 +27,17 @@ section{
     height: 646px;
     background-color: black;
     display: flex;
-    align-items: stretch;
-    margin-bottom: 20px;
+    /* align-items: stretch; */
+    margin-bottom: 40px;
    
 }
 #banner-info{
     width: 531px;
     height: 424px;
+    display: flex;
+    flex-direction: column;
     margin: 0px 20px 40px 40px;
-    align-items: center;
+    /* align-items: center; */
     
 }
 #banner-head{
@@ -57,8 +61,8 @@ section{
     font-size: 16px;
 }
 #banner-photo > img{
-    width: 650px;
-    height: 613px;
+    /* width: 650px;
+    height: 613px; */
 }
 
 /* blog and side bar section */
@@ -66,7 +70,8 @@ section{
     border-radius: 10px;
     width: 1310px;
     height: 1300px;
-    margin-bottom: 40px;
+    display: flex;
+    margin-bottom: 40px 0;
 }
 
 /* side bar section */
@@ -88,9 +93,9 @@ section{
     width: 252px;
     height: 64px;
 }
-/* #hover{
+#hover{
     background-color: brown;
-} */
+}
 
 
 /* blog location style */
@@ -98,23 +103,23 @@ section{
 .blogs-location{
     border-radius: 10px;
     width: 1020px;
-    height: 1100px;
+    /* height: 1100px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px;
+    /* grid-row-gap: 20px; */
 }
 .blog{
-    border-radius: 10px;
-    width: 310px;
-    height: 312px;
-    margin: 15px 0px;
-    padding: 15px 0px;  
+    /* border-radius: 10px; */
+    /* width: 310px; */
+    /* height: 312px; */
+    /* margin: 15px 0px; */
+    /* padding: 15px 0px;   */
 }
 
 /* icon part in blog */
 .icon-etc{
     display: flex;
-    flex-direction:row;
+    /* flex-direction:row; */
     align-items: center;
     margin: 0;
 }
@@ -135,19 +140,17 @@ footer{
     width: 1600px;
     height: 444px;
     background-color: black;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
 }
 .goal{
     color: white;
     font-size: 60px;
     text-align: center;
-    margin-top: 50px;
 }
 hr{
     width: 1320px;
     height: 0px;
-    /* left: 140px;
-    top: 2330px; */
 }
 nav > ul{
     display: flex;
@@ -166,23 +169,27 @@ nav li a{
     color: white;
     text-align: center;
 }
+
 /* footer menu class */
-#f-menu{
+/* #f-menu{
     position: relative;
-}
+} */
 
 /* Upcoming Match (Another Pages) Css Style */
 .upcoming-matches{
     border-radius: 10px;
     width: 1020px;
-    height: 750px;
+    height: 700px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 20px;
+    /* margin-top: 40px; */
 }
 .upcoming-match{
     width: 312px;
     height: 300px;
+    /* display: flex;
+    flex-direction: column; */
     text-align: center;
     border: .05px solid gray;
 }
@@ -200,7 +207,26 @@ nav li a{
 .social-media{
     font-size: 25px;
     text-align: center;
-    lin
 }
+
+/* Responsive */
+
+/* Mobile View */
+@media only screen and (max-width:688px) {
+    
+}
+
+
+/* Tablet view */
+@media only screen and (min-width:689px) and (max width: 800px){
+    .banner{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #side-bar{
+
+    }
+}
+
 
 /* Finished */
